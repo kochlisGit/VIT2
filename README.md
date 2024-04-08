@@ -16,6 +16,8 @@ ViT$2, which is composed in four modules. The first module applies data augmenta
 
 ![https://github.com/kochlisGit/VIT2/blob/main/figs/table5.png](https://github.com/kochlisGit/VIT2/blob/main/figs/table5.png)
 
+For further explanation about the comparison and the experimental setup, please refer to the paper.
+
 # Requirements
 
 * python >= 3.10
