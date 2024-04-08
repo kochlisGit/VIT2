@@ -4,7 +4,7 @@ Computer Vision has witnessed remarkable advancements through the utilization of
 
 # Architecture
 
-ViT$2, which is composed in four modules. The first module applies data augmentation via Gaussian noise injection into candlesticks data, further increasing data availability. The second module applies the GAF method to transform every time series features into images, which are then stacked together along the depth axis to form multi-channel images. The third module modifies the original ViT architecture to be compatible with the multi-channel input images and converts it into a probabilistic forecasting model. Then, it trains the modified architecture using the constructed images. The final module applies Transfer Learning and fine-tunes the trained model on a low-resource datasets.
+ViT$2, which is composed in four modules. The first module applies data augmentation via Gaussian noise injection into candlesticks data, further increasing data availability. The second module applies the GAF method to transform every time series features into images, which are then stacked together along the depth axis to form multi-channel images. The third module modifies the original ViT architecture to be compatible with the multi-channel input images and converts it into a probabilistic forecasting model. Then, it trains the modified architecture using the constructed images. The final module applies Transfer Learning and fine-tunes the trained model on a low-resource datasets. TIMM library has been used to implement ViT model architecture (https://timm.fast.ai/).
 
 ![https://github.com/kochlisGit/VIT2/blob/main/figs/methodology.jpeg](https://github.com/kochlisGit/VIT2/blob/main/figs/methodology.jpeg)
 
@@ -33,6 +33,18 @@ ViT$2, which is composed in four modules. The first module applies data augmenta
 * darts
 * timm
 * pyts
+
+# Probabilistic Time Series Forecasting
+
+This repository uses `DARTS` library to utilize probablistic time-series forecasting models (https://unit8co.github.io/darts/). 
+
+The models used in this repo are:
+
+1. Temporal Fusion Transformer (TFT)
+2. N-BEATS
+3. NHits
+
+Refer to DARTS library for more information.
 
 # Train Models
 
