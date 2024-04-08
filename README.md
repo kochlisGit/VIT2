@@ -10,12 +10,30 @@ ViT$^{2}$, which is composed in four modules. The first module applies data augm
 
 # Probabilistic Forecasting VIT
 
-![[https://github.com/kochlisGit/VIT2/blob/main/figs/methodology.jpeg](https://github.com/kochlisGit/VIT2/blob/main/figs/vit-modified.jpeg)]([https://github.com/kochlisGit/VIT2/blob/main/figs/methodology.jpeg](https://github.com/kochlisGit/VIT2/blob/main/figs/vit-modified.jpeg))
+![https://github.com/kochlisGit/VIT2/blob/main/figs/vit-modified.jpeg](https://github.com/kochlisGit/VIT2/blob/main/figs/vit-modified.jpeg)
 
 # Comparison
 
+![https://github.com/kochlisGit/VIT2/blob/main/figs/table5.png](https://github.com/kochlisGit/VIT2/blob/main/figs/table5.png)
+
 # Requirements
+
+* python >= 3.10
+* matplotlib
+* scikit-learn
+* numpy==1.26.4
+* pandas==2.2.1
+* pytorch_lightning==2.1.2
+* pyts==0.13.0
+* scikit_learn==1.3.2
+* ta==0.11.0
+* torch==2.1.1
+* torchview==0.2.6
+* tqdm==4.66.1
+* darts
+* timm
+* pyts
 
 # Train Models
 
-# Generate Predictions
+Train each model individually by running `python name_train.py`, where name corresponds to the selected model (ForCNN-Resnet, GAF-ViT, TFT, N-BEATS, NHits). Then, after you train all models, you can generate the prediction plots. Notebooks with examples have also been provided.
